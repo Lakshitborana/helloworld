@@ -1,8 +1,9 @@
-
+# step1
 print("hello, world!")
 print("I am starting my Gen AI journey")
 print(2+3)
 
+# step2
 name = "lakshit"
 age = 22
 cgpa = 8.5
@@ -16,12 +17,14 @@ print(is_student)
 print(type(name))
 print(type(age))
 
+# step3
 name = input("enter your name")
 age = input("enter your age")
 
 print("hello" , name )
 print("your age is", age )
 
+# step4
 a = 22
 b = 17
 
