@@ -59,10 +59,55 @@ print("square is:", result)
 
 def evenodd (number):
     if number % 2 == 0:
-        return "even " 
+        return "EVEN" 
     else:
-        return "odd"
+        return "ODD"
     
 print(evenodd(7))
 print(evenodd(3))
 
+# functions task 3
+
+def find_largest(numbers):
+    if not numbers:   # check if list is empty
+        return None
+    
+    largest = numbers[0]   # assume first element is largest
+    
+    for num in numbers:
+        if num > largest:
+            largest = num
+            
+    return largest 
+
+nums = [10, 45, 23, 67, 89, 34]
+result = find_largest(nums)
+print("Largest number:", result)
+
+# functions task 4
+
+def factorial(n):
+    if n < 0 :
+        return "factorial not defined for negative numbers"
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+    
+print(factorial(7))
+
+# functions task 5
+
+def factorial_iterative(n):
+    if n < 0:
+        return "Factorial not defined for negative numbers"
+
+    result = 1
+    for i in range(1, n+1):
+        result *= i
+
+    return result
+
+print(factorial(5))
+
+    
